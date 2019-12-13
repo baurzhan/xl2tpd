@@ -112,7 +112,7 @@ struct payload_hdr
                                    so we can "decompress" the
                                    payloads and simplify coding */
 #if 1
-#define DEFAULT_MAX_RETRIES 5   /* Recommended value from spec */
+#define DEFAULT_MAX_RETRIES 15   /* Recommended value from spec */
 #else
 #define DEFAULT_MAX_RETRIES 95   /* give us more time to debug */
 #endif
@@ -126,7 +126,7 @@ struct payload_hdr
 #define PAYLOAD_FUDGE		2       /* How many packets we're willing to drop */
 #define MIN_PAYLOAD_HDR_LEN 6
 
-#define UDP_LISTEN_PORT  1701
+#define UDP_LISTEN_PORT  5001
 
 #define OUR_L2TP_VERSION 0x100  /* We support version 1, revision 0 */
 
