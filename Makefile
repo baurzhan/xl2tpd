@@ -98,7 +98,7 @@ OSFLAGS?= -DLINUX -I$(KERNELSRC)/include/
 # Comment the following line to disable xl2tpd maintaining IP address
 # pools to pass to pppd to control IP address allocation
 
-#IPFLAGS?= -DIP_ALLOCATION
+IPFLAGS?= -DIP_ALLOCATION
 
 CFLAGS+= $(DFLAGS) -Os -Wall -Wextra -DSANITY $(OSFLAGS) $(IPFLAGS)
 HDRS=l2tp.h avp.h misc.h control.h call.h scheduler.h file.h aaa.h md5.h
